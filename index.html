@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="/api/placeholder/50/50" alt="Logo Filosa" class="logo">
+            <span class="brand-name">filosa</span>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#lvm">LVM</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+    
     <h2 class="titulo">Slider Automa</h2>
     <div class="slider-box">
         <ul>
@@ -26,5 +38,49 @@
         </ul>
     </div>
     
+<div class="Titulo-Raid">
+        <h1>Tipos de RAID</h1>
+</div>        
+<br>
+    </header>
+    
+        <div class="container">
+            <div class="card" onclick="toggleInfo(this)">
+                <h2>RAID 0</h2>
+                <div class="info">
+                    <p>RAID 0 divide los datos en bloques y los distribuye entre varios discos. Mejora el rendimiento pero no ofrece redundancia.</p>
+                </div>
+            </div>
+            <div class="card" onclick="toggleInfo(this)">
+                <h2>RAID 1</h2>
+                <div class="info">
+                    <p>RAID 1 crea una copia exacta (espejo) de un conjunto de datos en dos o más discos. Ofrece excelente redundancia a costa de la capacidad.</p>
+                </div>
+            </div>
+            <div class="card" onclick="toggleInfo(this)">
+                <h2>RAID 5</h2>
+                <div class="info">
+                    <p>RAID 5 distribuye datos y paridad entre tres o más discos. Ofrece buen equilibrio entre rendimiento, capacidad y redundancia.</p>
+                </div>
+            </div>
+            <div class="card" onclick="toggleInfo(this)">
+                <h2>RAID 10</h2>
+                <div class="info">
+                    <p>RAID 10 combina RAID 1 y RAID 0, creando un conjunto espejado de conjuntos distribuidos. Ofrece alto rendimiento y redundancia.</p>
+                </div>
+            </div>
+        </div>
+    <br>
+    <br>
+        <script>
+            function toggleInfo(card) {
+                card.classList.toggle('active');
+            }
+        </script>
+    
+    <footer>
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>

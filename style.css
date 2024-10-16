@@ -6,7 +6,10 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(247, 244, 244);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .titulo{
@@ -56,4 +59,139 @@ body{
 
     75%{margin-left: -300%;}
     100%{margin-left: -300%;}
+}
+
+header {
+    background: rgb(32, 32, 32);
+    color: #fbf9e4;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fbf9e4;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fbf9e4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(32, 32, 32);
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #122c4f;
+    color: #fbf9e4;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #bbbbbb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(32, 32, 32);
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgb(32, 32, 32);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: rgb(32, 32, 32);
+}
+
+.info {
+    display: none;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.card.active .info {
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6rem 2rem;
+    background-color: #122c4f;
+    box-shadow: 0 2px 4px rgb(32, 32, 32);
+    margin: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-menu li {
+    margin-left: 2rem;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: #122c4f;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.Titulo-Raid {
+    text-align: center;
 }
